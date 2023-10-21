@@ -16,6 +16,12 @@ The network model uses GraphSAGE to embed the social structure of users using th
 
 The social hate speech classifier concatenates the text and graph features in a vector of 784 dimensions. It also uses a fully connected neural network with three layers to get the result. It uses a cross-entropy loss function and an Adam optimizer to train the model on the train set. It evaluates the model on the test set using accuracy, precision, recall, and F-score metrics.
 
+## Users Social Structure
+
+The following image shows an example of how the users social structure is represented. Each node represents a user and each edge represents a connection.
+
+![Social Hate Speech Classifier](./img/users-graph.png)
+
 ## Requirements
 
 To run this project, you need to install the following libraries and frameworks:
